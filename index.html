@@ -242,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sunyeming.github.io/2017/11/21/test/">
+    <link itemprop="mainEntityOfPage" href="https://sunyeming.github.io/2017/11/21/无法删除github上的文件的解决办法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Stephen">
@@ -261,7 +261,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/21/test/" itemprop="url">test</a></h1>
+                <a class="post-title-link" href="/2017/11/21/无法删除github上的文件的解决办法/" itemprop="url">无法删除github上的文件的解决办法</a></h1>
         
 
         <div class="post-meta">
@@ -273,7 +273,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-21T13:03:52+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-21T13:10:59+08:00">
                 2017-11-21
               </time>
             
@@ -313,8 +313,15 @@
       
         
           
-            <hr>
-<p>Test</p>
+            <ol>
+<li>如果此文件夹已被加入git追踪，那么删除方法很简单，只需要将此文件夹删掉，然后提交一下就可以了</li>
+<li><p>如果次文件夹曾经被加入过git追踪，现在被加入.gitignore里了，但是github上还有此文件夹。</p>
+<p>解决办法如下：</p>
+<pre><code>git rm -r --cached 文件夹路径
+git commit -m &apos;删除忽略的目录 &quot;文件夹名字&quot;&apos;
+git push origin master    
+</code></pre></li>
+</ol>
 
           
         
@@ -659,6 +666,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
