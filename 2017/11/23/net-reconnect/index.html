@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="iOS,Android,net," />
 
 
 
@@ -79,29 +79,18 @@
 
 
 
-<meta name="description" content="以前曾经用Github搭建过Hexo博客，但是由于我在做持续集成的时候出错，博客没有了。这篇博客作为一个新的开端。Hexo官网 下面就以我安装Hexo博客的过程做个记录。">
-<meta name="keywords" content="hexo">
+<meta name="description" content="在移动平台下，网络信号频繁变动，造成更高的丢包率，更大的延迟抖动，不稳定的网络连接。如果处理不好，会造成很不好的体验。 特点： 网络制式多：2G/3G/4G/wifi 各种制式之间的网络速度差异大 地理位置变化中网络的切换（信号制式之间的转换、基站之间的转换）等  信号强度（建筑死角、隧道、深山老林、 无线信号会衰弱）">
+<meta name="keywords" content="iOS,Android,net">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac上搭建基于Github的免费博客（Hexo）
-
-
-
-">
-<meta property="og:url" content="https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/index.html">
+<meta property="og:title" content="移动平台游戏网络重连方案的总结">
+<meta property="og:url" content="https://sunyeming.github.io/2017/11/23/net-reconnect/index.html">
 <meta property="og:site_name" content="Stephen">
-<meta property="og:description" content="以前曾经用Github搭建过Hexo博客，但是由于我在做持续集成的时候出错，博客没有了。这篇博客作为一个新的开端。Hexo官网 下面就以我安装Hexo博客的过程做个记录。">
+<meta property="og:description" content="在移动平台下，网络信号频繁变动，造成更高的丢包率，更大的延迟抖动，不稳定的网络连接。如果处理不好，会造成很不好的体验。 特点： 网络制式多：2G/3G/4G/wifi 各种制式之间的网络速度差异大 地理位置变化中网络的切换（信号制式之间的转换、基站之间的转换）等  信号强度（建筑死角、隧道、深山老林、 无线信号会衰弱） 信号不稳定（在高速移动的火车上，会有明显的多普勒效应，网络延迟抖动） 网络拥塞">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/1.png">
-<meta property="og:image" content="https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/2.png">
 <meta property="og:updated_time" content="2017-11-23T10:25:57.882Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mac上搭建基于Github的免费博客（Hexo）
-
-
-
-">
-<meta name="twitter:description" content="以前曾经用Github搭建过Hexo博客，但是由于我在做持续集成的时候出错，博客没有了。这篇博客作为一个新的开端。Hexo官网 下面就以我安装Hexo博客的过程做个记录。">
-<meta name="twitter:image" content="https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/1.png">
+<meta name="twitter:title" content="移动平台游戏网络重连方案的总结">
+<meta name="twitter:description" content="在移动平台下，网络信号频繁变动，造成更高的丢包率，更大的延迟抖动，不稳定的网络连接。如果处理不好，会造成很不好的体验。 特点： 网络制式多：2G/3G/4G/wifi 各种制式之间的网络速度差异大 地理位置变化中网络的切换（信号制式之间的转换、基站之间的转换）等  信号强度（建筑死角、隧道、深山老林、 无线信号会衰弱） 信号不稳定（在高速移动的火车上，会有明显的多普勒效应，网络延迟抖动） 网络拥塞">
 
 
 
@@ -131,16 +120,12 @@
 
 
 
-  <link rel="canonical" href="https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/"/>
+  <link rel="canonical" href="https://sunyeming.github.io/2017/11/23/net-reconnect/"/>
 
 
 
 
-  <title>Mac上搭建基于Github的免费博客（Hexo）
-
-
-
- | Stephen</title>
+  <title>移动平台游戏网络重连方案的总结 | Stephen</title>
   
 
 
@@ -257,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/">
+    <link itemprop="mainEntityOfPage" href="https://sunyeming.github.io/2017/11/23/net-reconnect/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Stephen">
@@ -274,11 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mac上搭建基于Github的免费博客（Hexo）
-
-
-
-</h1>
+          <h1 class="post-title" itemprop="name headline">移动平台游戏网络重连方案的总结</h1>
         
 
         <div class="post-meta">
@@ -290,8 +271,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-01T08:08:51+00:00">
-                2017-11-01
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-23T10:22:52+00:00">
+                2017-11-23
               </time>
             
 
@@ -301,6 +282,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/net/" itemprop="url" rel="index">
+                    <span itemprop="name">net</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -309,9 +312,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/#comments" itemprop="discussionUrl">
+                <a href="/2017/11/23/net-reconnect/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/11/23/net-reconnect/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -344,48 +347,54 @@
       
 
       
-        <p>以前曾经用Github搭建过Hexo博客，但是由于我在做持续集成的时候出错，博客没有了。这篇博客作为一个新的开端。<a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo官网</a></p>
-<p>下面就以我安装Hexo博客的过程做个记录。</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="1-Node-js"><a href="#1-Node-js" class="headerlink" title="1.Node.js"></a>1.Node.js</h3><p>去<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a>下载对应的版本。安装即可。</p>
-<h3 id="2-Git"><a href="#2-Git" class="headerlink" title="2.Git"></a>2.Git</h3><p>Mac自带Git</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="3-终端中输入如下命令"><a href="#3-终端中输入如下命令" class="headerlink" title="3.终端中输入如下命令"></a>3.终端中输入如下命令</h3><pre><code>$ sudo npm install -g hexo
-</code></pre><p>在这个步骤时，我遇到了一些问题，问题如下：提示删除以前安装的Hexo。我以前安装过Hexo，原来如此。</p>
-<p>使用以下命令：</p>
-<pre><code>$ cd /usr/local/bin
-$ sudo rm ./hexo
-$ npm config set user 0
-$ npm config set unsafe-perm true
-$ sudo npm install -g hexo
-</code></pre><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>在终端上cd到一个目录，执行hexo init 命令：</p>
-<pre><code>$ hexo init blog
-</code></pre><p>或者自己创建一个文件夹 执行hexo init 命令：</p>
-<pre><code>$ hexo init
-</code></pre><p>在你的文件夹目录中，安装npm</p>
-<pre><code>$ npm install
-</code></pre><p>安装成功后，执行以下命令开启服务器：</p>
-<pre><code>$ hexo s
-</code></pre><p>在浏览器上打开网址<a href="http://0.0.0.0:4000/" target="_blank" rel="noopener">http://localhost:4000</a></p>
-<h2 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h2><p>登录Github账号，如果没有注册一个<a href="https://github.com/join?source=login" target="_blank" rel="noopener">账号</a>，新建一个仓库。名字必须是以下格式:</p>
-<pre><code>用户名.github.io
-</code></pre><p><img src="1.png" alt=""></p>
-<p>用你喜欢的编辑器打开根目录下的_config.yml，在文件的末尾修改如下：</p>
-<pre><code>deploy:
-    type: git
-    repository: https://github.com/sunyeming/sunyeming.github.io.git
-    branch: master
-</code></pre><p>上面的repository地址替换成如下这个地方的地址：</p>
-<p><img src="2.png" alt=""></p>
-<p>在_config.yml 文件中的标签后的冒号：后都要有空格</p>
-<p>在终端执行如下命令就可以在看到效果了：</p>
-<pre><code>$ hexo g
-$ hexo d
-</code></pre><p>若执行命令hexo deploy仍然报错：无法连接git或找不到git，则执行如下命令来安装hexo-deployer-git：</p>
-<pre><code>$ npm install hexo-deployer-git --save
-</code></pre><p>如果未关联Github，则执行hexo d命令时终端会提示你输入Github的用户名和密码</p>
-<pre><code>Username for &apos;https://github.com&apos;:
-Password for &apos;https://github.com&apos;:
-</code></pre><p>成功后，在浏览器中打开网址<a href="http://你的用户名.github.io" target="_blank" rel="noopener">http://你的用户名.github.io</a><br>至此，Hexo就安装好了</p>
-<h2 id="接下你就可以折腾主题和你的文章了"><a href="#接下你就可以折腾主题和你的文章了" class="headerlink" title="接下你就可以折腾主题和你的文章了"></a>接下你就可以折腾主题和你的文章了</h2>
+        <p>在移动平台下，网络信号频繁变动，造成更高的丢包率，更大的延迟抖动，不稳定的网络连接。如果处理不好，会造成很不好的体验。</p>
+<h2 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h2><ol>
+<li>网络制式多：2G/3G/4G/wifi</li>
+<li>各种制式之间的网络速度差异大</li>
+<li>地理位置变化中网络的切换（信号制式之间的转换、基站之间的转换）等 </li>
+<li>信号强度（建筑死角、隧道、深山老林、 无线信号会衰弱）</li>
+<li>信号不稳定（在高速移动的火车上，会有明显的多普勒效应，网络延迟抖动）</li>
+<li>网络拥塞（人口密集的场所，运营商降低人均通讯带宽，网络延迟增大）</li>
+</ol>
+<h2 id="影响："><a href="#影响：" class="headerlink" title="影响："></a>影响：</h2><ol>
+<li>网络慢导致请求响应时间变长甚至断线</li>
+<li>网络不稳定导致上行包/下行包丢失</li>
+<li>弱网络加剧异步设计系统的响应延迟</li>
+</ol>
+<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><h3 id="1-如何解决网络切换导致的网络中断"><a href="#1-如何解决网络切换导致的网络中断" class="headerlink" title="1.如何解决网络切换导致的网络中断"></a>1.如何解决网络切换导致的网络中断</h3><p>当在网络制式之间切换时，能够感知到网络的切换，ios下可以采用官方的例子reachability进行感知，Android上提供了Connectivity Manager服务可以实现同样的功能。</p>
+<h3 id="2-如何解决网络慢导致的响应延迟"><a href="#2-如何解决网络慢导致的响应延迟" class="headerlink" title="2.如何解决网络慢导致的响应延迟"></a>2.如何解决网络慢导致的响应延迟</h3><ul>
+<li>客户端保证一发一/多收模式</li>
+</ul>
+<p>大部分协议都有一个定时器，在超时时间内，客户端期待网络端回包。根据协议的不同，服务端回包的个数也不同，例如对玩家购买金币的操作，服务端在回多个包，包括扣钻石的回包，反馈操作是否成功的回包等。不管是一发一收还是一发多收的模式，一般情况下，每一个上行包都有一个对应的反馈下行包老表示操作结束，在这个反馈下行包之前，服务端也可能会发送别的回包给客户端。</p>
+<p>然而有些协议不需要期待下行包，所以客户端也会启动一个协议白名单机制。在白名单中的协议，客户端发包之后不期待回包就可以继续操作。常见的GM相关的协议，平台请求的协议都不需要期待回包。</p>
+<p>在超时时间内，客户端对UI交互进行锁定（模态菊花）。</p>
+<p>如果在超时时间之后客户端没有收到回包，此时客户端会启动超时探测。</p>
+<ul>
+<li>客户端超时探测</li>
+</ul>
+<p>对于在超时时间内没有期待到回包的情况，客户端主动向服务器发送一个探测包。这个探测包只包含一个包头，不携带任何信息。在发送探测包的同时，客户端同样为这个探测包启动一个定时器，如果在超时时间内探测包有回包，我们认定上行包丢失（也有下行包丢失的情况），直接忽略这种情况；如果探测包在超时时间内也没有回包，那么这时候我们断定网络出了问题，直接弹出提示框告知玩家请求失败，由玩家手动点击重连进入断线重连程序。</p>
+<ul>
+<li><p>断线重连</p>
+<ol>
+<li><p>简化登录流程</p>
+<p> 弱网环境下，玩家出现掉线的情况比较频繁，所以登录流程需要细分，区分完整登录和断线重连的情况。</p>
+</li>
+<li><p>延迟下线机制</p>
+<p> 当玩家出现掉线后，服务器不马上清除玩家角色数据，而是为玩家角色数据设置一个延迟下线时间（如5分钟），然后在主程序中的时间事件里检查角色数据状态，如果玩家在时间未过期之前重新连接上，就可以直接将角色数据下发客户端，否则清除数据，下册玩家重新登录上走完整登录流程。</p>
+</li>
+<li><p>尝试重连</p>
+<pre><code>当检测到断线后，可以尝试重连几次
+</code></pre></li>
+<li><p>显示连接</p>
+<p> 在尝试连接几次之后，任然无法连接。可以给用户弹出提示框，中断游戏流程，引导用户重新连接。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="3-如何解决丢包问题"><a href="#3-如何解决丢包问题" class="headerlink" title="3.如何解决丢包问题"></a>3.如何解决丢包问题</h3><p>弱网环境下导致丢包具体来说有两种情况，一是上行包丢失，即服务器没有收到请求协议，客户端只需要重新请求即可；二是下行包丢失，服务器已经收到请求协议并处理，由于网络问题，客户端未收到回包，客户端不知道服务器是否已处理以及处理返回的数据是什么。<br>下行包丢失又可以细分两种情况，一是对于客户端收不到回包不会应县玩家收益的请求，则不需要做特别的处理，这类请求回包丢失时，玩家一般可以重新登录或刷新界面可以恢复数据的请求，典型的有领取任务奖励；二是对于客户端收不到回包会影响玩家的请求，列入战斗过程中加血，如果是网络问题，走断线重连流程，如果是下行包丢失，则需要形影的机制俩处理。主要手段是消息会话机制。</p>
+<p>消息回话机制的实现思路是客户端和服务端配合工作，首先客户端为每个协议请求分配一个唯一的会话id，当客户端重复操作的时候，如果上一个请求没有收到服务端的响应，志哥时候就会分配相同的会话id。服务端收到相同的会话id，则认为是重复的请求，重复的请求本质上是上一次请求的历史回放。应对回放的请求，最直接的解决方案就是返回回放的回复数据。因此只需要在逻辑处理完“非重复请求”后以及将回复数据提交网络层返回客户端之前，对回放数据进行缓存，在后续遇到这次回复的重复请求时，绕过逻辑处理，直接将之前缓存的回复数据返回客户端即可。</p>
+<h2 id="心跳包"><a href="#心跳包" class="headerlink" title="心跳包"></a>心跳包</h2><p>心跳包是现在常见的保活手段，也可以让服务器知道是否与客户端断开连接（物理上的），从而进一步知道是否要清除玩家数据，减轻服务器压力。</p>
+
       
     </div>
     
@@ -431,7 +440,11 @@ Password for &apos;https://github.com&apos;:
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
+            <a href="/tags/Android/" rel="tag"># Android</a>
+          
+            <a href="/tags/net/" rel="tag"># net</a>
           
         </div>
       
@@ -444,15 +457,15 @@ Password for &apos;https://github.com&apos;:
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/21/Book/" rel="next" title="Book">
+                <i class="fa fa-chevron-left"></i> Book
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/03/golangProtoGen问题/" rel="prev" title="golangProtoGen问题">
-                golangProtoGen问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -614,7 +627,7 @@ Password for &apos;https://github.com&apos;:
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境配置"><span class="nav-number">2.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">1.Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Git"><span class="nav-number">2.2.</span> <span class="nav-text">2.Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-终端中输入如下命令"><span class="nav-number">3.1.</span> <span class="nav-text">3.终端中输入如下命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">4.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联GitHub"><span class="nav-number">5.</span> <span class="nav-text">关联GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接下你就可以折腾主题和你的文章了"><span class="nav-number">6.</span> <span class="nav-text">接下你就可以折腾主题和你的文章了</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#特点："><span class="nav-number">1.</span> <span class="nav-text">特点：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#影响："><span class="nav-number">2.</span> <span class="nav-text">影响：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案："><span class="nav-number">3.</span> <span class="nav-text">解决方案：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-如何解决网络切换导致的网络中断"><span class="nav-number">3.1.</span> <span class="nav-text">1.如何解决网络切换导致的网络中断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-如何解决网络慢导致的响应延迟"><span class="nav-number">3.2.</span> <span class="nav-text">2.如何解决网络慢导致的响应延迟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-如何解决丢包问题"><span class="nav-number">3.3.</span> <span class="nav-text">3.如何解决丢包问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#心跳包"><span class="nav-number">4.</span> <span class="nav-text">心跳包</span></a></li></ol></div>
             
 
           </div>
@@ -797,13 +810,9 @@ Password for &apos;https://github.com&apos;:
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://sunyeming.github.io/2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/';
-          this.page.identifier = '2017/11/01/Mac上搭建基于Github的免费博客（Hexo）/';
-          this.page.title = 'Mac上搭建基于Github的免费博客（Hexo）
-
-
-
-';
+          this.page.url = 'https://sunyeming.github.io/2017/11/23/net-reconnect/';
+          this.page.identifier = '2017/11/23/net-reconnect/';
+          this.page.title = '移动平台游戏网络重连方案的总结';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://Stephen.disqus.com/embed.js';
