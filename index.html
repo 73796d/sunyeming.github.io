@@ -324,7 +324,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" rel="gallery_cjabxt5sm000058mjdj4jo7oc"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" rel="gallery_cjabyvrrx0001mkmjw6kt27f9"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" itemprop="contentUrl"/>
               </a>
@@ -339,8 +339,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/21/Book/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -469,17 +476,20 @@
       
         
           
-            <ol>
-<li>如果此文件夹已被加入git追踪，那么删除方法很简单，只需要将此文件夹删掉，然后提交一下就可以了</li>
-<li><p>如果次文件夹曾经被加入过git追踪，现在被加入.gitignore里了，但是github上还有此文件夹。</p>
-<p>解决办法如下：</p>
-<pre><code>git rm -r --cached 文件夹路径
-git commit -m &apos;删除忽略的目录 &quot;文件夹名字&quot;&apos;
-git push origin master    
-</code></pre></li>
-</ol>
-
           
+如果此文件夹已被加入git追踪，那么删除方法很简单，只需要将此文件夹删掉，然后提交一下就可以了
+如果次文件夹曾经被加入过git追踪，现在被加入.gitignore里了，但是github上还有此文件夹。
+解决办法如下：
+git rm -r --cached 文件夹路径
+git commit -m &
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/21/无法删除github上的文件的解决办法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -608,10 +618,15 @@ git push origin master
       
         
           
-            <p>这个问题的原因是：<br>在生成代码之前要先安装go get -u github.com/golang/protobuf/{proto,protoc-gen-go} 并且把GOPATH/bin目录下的protoc-gen-go放到环境变量PATH里面去，否则会报<br>protoc-gen-go: program not found or is not executable<br>这个错误。 命令如下：</p>
-<pre><code>$ go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
-</code></pre>
-          
+          这个问题的原因是：在生成代码之前要先安装go get -u github.com/golang/protobuf/{proto,protoc-gen-go} 并且把GOPATH/bin目录下的protoc-gen-go放到环境变量PATH里面去，否则会报protoc-gen-go: program 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/11/03/golangProtoGen问题/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -866,6 +881,12 @@ git push origin master
                   <a href="https://github.com/sunyeming" target="_blank" title="GitHub">
                     
                       <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://www.jianshu.com/users/e86c1494d84e" target="_blank" title="简书">
+                    
+                      <i class="fa fa-fw fa-globe"></i>简书</a>
                 </span>
               
             
